@@ -1,4 +1,3 @@
-
 # Password Strength Analyzer
 A Flask-based cybersecurity utility designed to evaluate password strength using entropy analysis, pattern detection, and secure local password history management.
 This project focuses on practical password security concepts including:
@@ -172,5 +171,3 @@ http://127.0.0.1:5001
 MARADANA HIMATEJ
 Cyber Security Student
 
-```
-```
