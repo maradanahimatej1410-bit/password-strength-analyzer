@@ -72,17 +72,22 @@ Checks for:
 - **Main analyzer interface**
 <img width="1024" height="768" alt="main-dashboard" src="https://github.com/user-attachments/assets/35b5646d-d991-45ab-9e7e-320c53ff6d6d" />
 
+
 - **Strong Password (input given)**
 <img width="1024" height="768" alt="strong-password" src="https://github.com/user-attachments/assets/284c8c1d-8364-48a0-ba19-546e6e3685bd" />
 
+
 - **Password Generator**
-<img width="1024" height="768" alt="password-generator" src="https://github.com/user-attachments/assets/83082ff7-d3af-4a2f-bb0f-b00a2a716395" />
+<img width="1024" height="768" alt="password-generator" src="https://github.com/user-attachments/assets/0fa88273-976e-46be-a244-bfcb19490862" />
+
 
 - **Password history section**
-<img width="1024" height="768" alt="history-section" src="https://github.com/user-attachments/assets/529f9459-0046-427c-948c-f80849173a07" />
+<img width="1024" height="768" alt="history-section" src="https://github.com/user-attachments/assets/a399136a-48c1-4449-ab44-6b4a3a80895e" />
+
 
 - **Password report analysis downloded from the site**
 <img width="1024" height="768" alt="password-report-analysis downloads" src="https://github.com/user-attachments/assets/50fb4080-df45-4fe1-9a69-ada52017164f" />
+
 
 
 ## 📁 Project Structure
