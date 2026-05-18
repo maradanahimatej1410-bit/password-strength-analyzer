@@ -85,8 +85,8 @@ Checks for:
 <img width="1024" height="768" alt="history-section" src="https://github.com/user-attachments/assets/a399136a-48c1-4449-ab44-6b4a3a80895e" />
 
 
-- **Password report analysis downloded from the site**
-<img width="1024" height="768" alt="password-report-analysis downloads" src="https://github.com/user-attachments/assets/50fb4080-df45-4fe1-9a69-ada52017164f" />
+- **Exported report analysis**
+<img width="1024" height="768" alt="exported-report-of-analysis" src="https://github.com/user-attachments/assets/697ce31d-5434-4905-b2bd-1de440f1f549" />
 
 
 
