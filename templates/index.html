@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="app-header">
+        <div>
+            <p class="eyebrow">Local cybersecurity utility</p>
+            <h1>Password Strength Analyzer</h1>
+        </div>
+        <nav class="header-nav" aria-label="Page sections">
+            <a href="#analyzer">Analyzer</a>
+            <a href="#generator">Generator</a>
+            <a href="#history">History</a>
+        </nav>
+    </header>
+
+    <main class="app-shell">
+        <section class="panel analyzer-panel" id="analyzer" aria-labelledby="analyzer-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Real-time analysis</p>
+                    <h2 id="analyzer-title">Check a password</h2>
+                </div>
+                <button class="plain-button" id="togglePassword" type="button" aria-label="Show password">Show</button>
+            </div>
+
+            <label class="field-label" for="passwordInput">Password</label>
+            <input id="passwordInput" class="password-input" type="password" maxlength="256" autocomplete="off" spellcheck="false" placeholder="Type or generate a password">
+
+            <div class="strength-row">
+                <div class="meter-track" aria-label="Password strength">
+                    <div class="meter-fill" id="strengthMeter"></div>
+                </div>
+                <strong class="percentage" id="strengthPercent">0%</strong>
+            </div>
+            <div class="rating-line">
+                <span id="strengthLabel" class="status-message status-idle">Enter a password to begin security analysis.</span>
+                <span id="reuseWarning" class="warning-pill hidden">Reused locally</span>
+            </div>
+
+            <div class="action-row">
+                <button class="primary-button" id="copyBtn" type="button">Copy password</button>
+                <button class="secondary-button" id="saveBtn" type="button">Save analysis</button>
+                <button class="secondary-button" id="exportBtn" type="button">Export report</button>
+            </div>
+
+            <div class="metric-grid" aria-label="Password analysis metrics">
+                <article class="metric">
+                    <span>Entropy</span>
+                    <strong id="entropyValue">0 bits</strong>
+                </article>
+                <article class="metric">
+                    <span>Crack time</span>
+                    <strong id="crackTime">Not calculated</strong>
+                </article>
+                <article class="metric">
+                    <span>Length</span>
+                    <strong id="lengthValue">0 chars</strong>
+                </article>
+            </div>
+        </section>
+
+        <aside class="panel feedback-panel" aria-labelledby="feedback-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Security feedback</p>
+                    <h2 id="feedback-title">What to improve</h2>
+                </div>
+            </div>
+
+            <div class="requirements" id="requirements">
+                <div class="requirement" data-requirement="length">12+ characters</div>
+                <div class="requirement" data-requirement="uppercase">Uppercase</div>
+                <div class="requirement" data-requirement="lowercase">Lowercase</div>
+                <div class="requirement" data-requirement="numbers">Number</div>
+                <div class="requirement" data-requirement="symbols">Symbol</div>
+            </div>
+
+            <div class="feedback-box" id="feedbackBox">
+                Enter a password to see practical feedback.
+            </div>
+        </aside>
+
+        <section class="panel generator-panel" id="generator" aria-labelledby="generator-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Secure generator</p>
+                    <h2 id="generator-title">Create a strong password</h2>
+                </div>
+                <button class="primary-button compact" id="generateBtn" type="button">Generate</button>
+            </div>
+
+            <div class="generator-controls">
+                <label class="range-field">
+                    <span>Length: <strong id="lengthOutput">18</strong></span>
+                    <input id="generatorLength" type="range" min="12" max="64" value="18">
+                </label>
+                <label><input id="optUppercase" type="checkbox" checked> Uppercase</label>
+                <label><input id="optLowercase" type="checkbox" checked> Lowercase</label>
+                <label><input id="optNumbers" type="checkbox" checked> Numbers</label>
+                <label><input id="optSymbols" type="checkbox" checked> Symbols</label>
+            </div>
+        </section>
+
+        <section class="panel history-panel" id="history" aria-labelledby="history-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SQLite history</p>
+                    <h2 id="history-title">Saved analyses</h2>
+                </div>
+                <button class="danger-button compact" id="clearHistoryBtn" type="button">Clear history</button>
+            </div>
+            <div class="history-list" id="historyList">
+                <p class="muted">No saved analyses yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        Local Cybersecurity Utility &bull; Flask + SQLite + zxcvbn
+    </footer>
+
+    <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
