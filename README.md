@@ -1,7 +1,6 @@
+
 # Password Strength Analyzer
-
 A Flask-based cybersecurity utility designed to evaluate password strength using entropy analysis, pattern detection, and secure local password history management.
-
 This project focuses on practical password security concepts including:
 - password complexity analysis
 - entropy estimation
@@ -13,10 +12,12 @@ The application provides real-time feedback while maintaining a clean and fully 
 ## Live Demo
 https://password-strength-analyzer-wxun.onrender.com
 
+
 ## GitHub Repository
 https://github.com/maradanahimatej1410-bit/password-strength-analyzer
 
 ## Features
+
 ### Password Strength Analysis
 - Real-time password evaluation
 - Strength percentage scoring
@@ -53,7 +54,9 @@ Checks for:
 - Smooth interactions and transitions
 - Fully functional UI components
 
+
 ## Technologies Used
+
 | Technology | Purpose |
 |---|---|
 | Python | Backend logic |
@@ -64,6 +67,7 @@ Checks for:
 | CSS | Styling |
 | JavaScript | Frontend interactivity |
 
+
 ## Screenshots
 Suggested screenshots to include:
 - Main analyzer interface
@@ -71,7 +75,9 @@ Suggested screenshots to include:
 - Password history section
 - Security feedback examples
 
+
 ## Project Structure
+```bash
 password-analyzer/
 │
 ├── app.py
@@ -92,32 +98,51 @@ password-analyzer/
     │
     └── js/
         └── script.js
+````
 
 ## Installation
 ### Clone Repository
+```bash
 git clone https://github.com/maradanahimatej1410-bit/password-strength-analyzer.git
+```
 
 ### Open Project
+```bash
 cd password-strength-analyzer
+```
 
 ### Create Virtual Environment
+```bash
 python -m venv .venv
+```
 
 ### Activate Virtual Environment
+
 #### Windows
+```bash
 .venv\Scripts\activate
+```
 
 #### Linux / macOS
+```bash
 source .venv/bin/activate
+```
 
 ### Install Dependencies
+```bash
 pip install -r requirements.txt
+```
+
 
 ## Run Locally
+```bash
 python app.py
+```
 
 Open in browser:
+```text
 http://127.0.0.1:5001
+```
 
 ## Security Concepts Demonstrated
 * Password entropy calculation
@@ -142,6 +167,10 @@ http://127.0.0.1:5001
 * Automated testing
 * Optional encrypted local vault
 
+
 ## Author
 MARADANA HIMATEJ
 Cyber Security Student
+
+```
+```
