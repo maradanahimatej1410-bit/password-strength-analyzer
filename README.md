@@ -1,106 +1,147 @@
 # Password Strength Analyzer
 
-A practical Flask-based cybersecurity utility for analyzing password strength, estimating entropy and crack time, generating secure passwords, and detecting local password reuse without storing plaintext passwords.
+A Flask-based cybersecurity utility designed to evaluate password strength using entropy analysis, pattern detection, and secure local password history management.
+
+This project focuses on practical password security concepts including:
+- password complexity analysis
+- entropy estimation
+- brute-force resistance
+- secure password generation
+- password reuse detection
+The application provides real-time feedback while maintaining a clean and fully functional user experience.
+
+## Live Demo
+https://password-strength-analyzer-wxun.onrender.com
+
+## GitHub Repository
+https://github.com/maradanahimatej1410-bit/password-strength-analyzer
 
 ## Features
+### Password Strength Analysis
+- Real-time password evaluation
+- Strength percentage scoring
+- Entropy estimation in bits
+- Estimated brute-force crack-time analysis
+- Detection of weak/common password patterns
 
-- Real-time password strength percentage from 0% to 100%
-- zxcvbn-backed password analysis for common patterns and guessability
-- Entropy estimate in bits
-- Offline brute-force crack time estimate
-- Requirement checks for length, uppercase, lowercase, numbers, and symbols
-- Clear security feedback with practical recommendations
-- Configurable secure password generator
-- Copy-to-clipboard support with user feedback
-- SQLite-backed password history
-- Password reuse detection using deterministic hashes only
-- Delete individual history records or clear all history
-- Export a text report that never includes the raw password
-- Responsive dark interface with no decorative-only controls
+### Security Validation
+Checks for:
+- minimum length
+- uppercase letters
+- lowercase letters
+- numbers
+- special symbols
+
+### Password Generator
+- Generates secure random passwords
+- Configurable complexity
+- One-click copy support
+
+### Password History
+- Stores password analysis history locally using SQLite
+- Detects previously used passwords
+- Delete individual records
+- Clear complete history
+
+### Export Functionality
+- Export password analysis reports
+- Reports exclude plaintext passwords for security
+
+### User Experience
+- Responsive dark-themed interface
+- Real-time security feedback
+- Smooth interactions and transitions
+- Fully functional UI components
 
 ## Technologies Used
-
-- Python
-- Flask
-- SQLite
-- zxcvbn
-- HTML
-- CSS
-- JavaScript
+| Technology | Purpose |
+|---|---|
+| Python | Backend logic |
+| Flask | Web framework |
+| SQLite | Local database |
+| zxcvbn | Password strength analysis |
+| HTML | Structure |
+| CSS | Styling |
+| JavaScript | Frontend interactivity |
 
 ## Screenshots
-
-Add screenshots here after running the app locally:
-
-- Main analyzer screen
-- Generated strong password analysis
-- Saved history view
+Suggested screenshots to include:
+- Main analyzer interface
+- Password generator
+- Password history section
+- Security feedback examples
 
 ## Project Structure
-
-```text
 password-analyzer/
+│
 ├── app.py
+├── requirements.txt
+├── README.md
+│
 ├── database/
 │   ├── __init__.py
 │   ├── store.py
 │   └── passwords.db
-├── static/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
+│
 ├── templates/
 │   └── index.html
-├── requirements.txt
-└── README.md
-```
+│
+└── static/
+    ├── css/
+    │   └── style.css
+    │
+    └── js/
+        └── script.js
 
-## Setup Instructions
+## Installation
+### Clone Repository
+git clone https://github.com/maradanahimatej1410-bit/password-strength-analyzer.git
 
-1. Create a virtual environment:
+### Open Project
+cd password-strength-analyzer
 
-```bash
+### Create Virtual Environment
 python -m venv .venv
-```
 
-2. Activate the virtual environment:
-
-```bash
+### Activate Virtual Environment
+#### Windows
 .venv\Scripts\activate
-```
 
-3. Install dependencies:
+#### Linux / macOS
+source .venv/bin/activate
 
-```bash
+### Install Dependencies
 pip install -r requirements.txt
-```
 
 ## Run Locally
-
-```bash
 python app.py
-```
 
-Open the app at:
-
-```text
+Open in browser:
 http://127.0.0.1:5001
-```
 
-The SQLite database is created automatically inside the `database/` directory.
+## Security Concepts Demonstrated
+* Password entropy calculation
+* Secure password generation
+* Password reuse detection
+* SHA-256 hashing
+* Local secure password handling
+* Brute-force resistance estimation
+* Real-time password validation
 
 ## Security Notes
-
-- Passwords are never stored in plaintext.
-- History stores a SHA-256 hash with a local pepper value.
-- Exported reports include analysis results only, not the password.
-- This is an educational local utility, not a replacement for enterprise password auditing systems.
+* Passwords are never stored in plaintext
+* Local password history uses deterministic hashing
+* Exported reports never expose original passwords
+* Designed for educational and local-use purposes
 
 ## Future Improvements
+* Breached-password database checks
+* PDF export support
+* User authentication system
+* Advanced password policy customization
+* Automated testing
+* Optional encrypted local vault
 
-- Optional master-key protected local database
-- Importable breached-password hash list checks
-- PDF export
-- Unit and browser automation tests
-- User-configurable hashing pepper through a setup screen
+## Author
+MARADANA HIMATEJ
+Cyber Security Student
