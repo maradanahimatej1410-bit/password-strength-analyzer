@@ -68,22 +68,26 @@ Checks for:
 
 
 ## 📸 Screenshots
-Suggested screenshots to include:
-- Main analyzer interface
-<img width="1024" height="768" alt="main-dashboard" src="https://github.com/user-attachments/assets/083ed7ed-593f-4ef5-8aae-95e6da0ac5d9" />
-- Strong Password (input given)
-<img width="1024" height="768" alt="strong-password" src="https://github.com/user-attachments/assets/1fd885d7-6915-4109-8896-c5df7d6b687c" />
-- Password Generator
-<img width="1024" height="768" alt="password-generator" src="https://github.com/user-attachments/assets/222c0b7c-52dd-4e31-a725-8707ce791af4" />
-- Password history section
-<img width="1024" height="768" alt="history-section" src="https://github.com/user-attachments/assets/d80a366f-2094-44f4-86ef-f1bf3ba71ee4" />
-- Password report analysis downloded from the site
-<img width="1024" height="768" alt="password-report-analysis downloads" src="https://github.com/user-attachments/assets/8337dbef-7265-4e4d-899c-33c8a04d692b" />
+
+- **Main analyzer interface**
+<img width="1024" height="768" alt="main-dashboard" src="https://github.com/user-attachments/assets/35b5646d-d991-45ab-9e7e-320c53ff6d6d" />
+
+- **Strong Password (input given)**
+<img width="1024" height="768" alt="strong-password" src="https://github.com/user-attachments/assets/284c8c1d-8364-48a0-ba19-546e6e3685bd" />
+
+- **Password Generator**
+<img width="1024" height="768" alt="password-generator" src="https://github.com/user-attachments/assets/83082ff7-d3af-4a2f-bb0f-b00a2a716395" />
+
+- **Password history section**
+<img width="1024" height="768" alt="history-section" src="https://github.com/user-attachments/assets/529f9459-0046-427c-948c-f80849173a07" />
+
+- **Password report analysis downloded from the site**
+<img width="1024" height="768" alt="password-report-analysis downloads" src="https://github.com/user-attachments/assets/50fb4080-df45-4fe1-9a69-ada52017164f" />
 
 
 ## 📁 Project Structure
 ```bash
-password-analyzer/
+**password-analyzer/**
 │
 ├── app.py
 ├── requirements.txt
@@ -144,7 +148,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open in browser:
+**Open in browser:**
 ```text
 http://127.0.0.1:5001
 ```
@@ -174,6 +178,6 @@ http://127.0.0.1:5001
 
 
 ## 👨‍💻 Author
-MARADANA HIMATEJ
-Cyber Security Student
+**MARADANA HIMATEJ**
+**Cyber Security Student**
 
