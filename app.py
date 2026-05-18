@@ -2,6 +2,7 @@ import io
 import math
 import secrets
 import string
+import os
 from datetime import datetime
 
 from flask import Flask, jsonify, make_response, render_template, request
@@ -353,5 +354,7 @@ def render_text_report(analysis):
     return buffer.getvalue()
 
 
+
+
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
